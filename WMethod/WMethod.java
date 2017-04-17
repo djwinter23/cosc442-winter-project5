@@ -381,17 +381,16 @@ public class WMethod{
      Vector <String> tests=generateTests(transitionCover, w); // Generate tests.
      Utilities.printAllTestCases(tests); // Print tests.
      
-     // TODO: 	Write the necessary code to iterate through all test cases and run them against
-     // 		the FSM using the Utilities.runFSM() method. 
-     //
-     // Example use of the Utilities.runFSM() method
-      Utilities.runFSM(FSM, 1, "a a b a b", " ");
-      Utilities.runFSM(FSM, 1, "a a", "");
+     //The code necessary for the to iterate through the vector and run each element through the runFSM method
+     String testCase = "";
      for (int i = 0; i < tests.size(); i++)
-     {
-    	 Utilities.runFSM(FSM, 1, tests.get(i),"");
+     {		
+    	 	 //replaces each empty string with a space adding a space between each character in each element of the string vector
+    	 	 testCase = tests.get(i).replace("", " "); 
+    		 Utilities.runFSM(FSM, 1, testCase, " ");
      }
-     
+ 
+          
    }// End of main()
    
 }//End of class WMethod
