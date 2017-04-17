@@ -13,16 +13,16 @@ Output alphabet:
 1
 
 From 	 Input/Output 	 To
-1	 b/1		 4
-1	 a/0		 1
-2	 b/1		 5
-2	 a/0		 1
-3	 b/1		 1
-3	 a/0		 5
-4	 a/1		 3
-4	 b/1		 4
-5	 b/1		 5
-5	 a/1		 2
+1	         b/1		 4
+1	         a/0		 1
+2	         b/1		 5
+2	         a/0		 1
+3	         b/1		 1
+3	         a/0		 5
+4	         a/1		 3
+4	         b/1		 4
+5	         b/1		 5
+5	         a/1		 2
 
 Transition cover set (P). 11 entries.
 Empty a b ba baa baaa baaaa baaab baab bab bb 
