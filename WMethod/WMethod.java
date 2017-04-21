@@ -387,7 +387,12 @@ public class WMethod{
      {		
     	 	 //replaces each empty string with a space adding a space between each character in each element of the string vector
     	 	 testCase = tests.get(i).replace("", " "); 
-    		 Utilities.runFSM(FSM, 1, testCase, " ");
+    		 String output = Utilities.runFSM(FSM, 1, testCase, " ");
+    		 if(output.contains("yes"))
+    			 System.out.println("public void testCase" + i + "(){" + "\nassertTrue(bond.bondRegex(" + testCase + "));\n}" );
+    		 else
+    			 System.out.println("public void testCase" + i + "(){" + "\nassertFalse(bond.bondRegex(" + testCase + "));\n}");
+    			 
      }
  
           
